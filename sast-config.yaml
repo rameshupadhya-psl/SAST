@@ -1,38 +1,26 @@
 steps:
-- task: Checkmarx-Prerelease.cxsast.cx-scan-task.Application security testing@2022
-  displayName: 'Application security testing'
+- task: Application security testing@2022
   inputs:
     projectName: 'Sprint 11'
-    syncMode: true
     enableProxy: false
-    proxyUrl: ''
     enableSastScan: true
-    CheckmarxService: 9.4SAST
-    sastProxyUrl: ''
-    preset: Android
+    CheckmarxService: '9.4'
+    preset: 'Android'
     customPreset: 'All'
-    engineConfigId: 
-    fullTeamName: /CxServer
-    sastCaChainFilePath: ''
-    overrideProjectSettings: false
-    incScan: true
+    fullTeamName: '/CxServer'
     fullScansScheduled: true
-    fullScanCycle: 5
-    forceScan: false
-    folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
+    fullScanCycle: '5'
     fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
-    scanTimeout: 5
+    scanTimeout: '5'
     projectcustomfields: 'Key1:Value1'
     customfields: 'Key1:Value1'
-    denyProject: false
     comment: 'Generating YAML File'
-    postScanAction: Trial
+    postScanAction: 'Trial'
     generatePDFReport: true
     vulnerabilityThreshold: true
     failBuildForNewVulnerabilitiesEnabled: true
-    failBuildForNewVulnerabilitiesSeverity: MEDIUM
-    high: 10
-    medium: 10
-    low: 10
-    enablePolicyViolations: false
-    avoidDuplicateScans: false
+    failBuildForNewVulnerabilitiesSeverity: 'MEDIUM'
+    high: '10'
+    medium: '10'
+    low: '10'
+    enableDependencyScan: false
