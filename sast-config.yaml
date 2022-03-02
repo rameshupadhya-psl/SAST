@@ -29,12 +29,6 @@ stages:
         fullTeamName: /CxServer
         sastCaChainFilePath: ''
         overrideProjectSettings: false
-        incScan: true
-        fullScansScheduled: true
-        fullScanCycle: 5
-        forceScan: false
-        folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
-        fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
         scanTimeout: 5
         customfields: 'Key1:Value1'
         denyProject: false
