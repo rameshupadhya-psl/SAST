@@ -36,7 +36,6 @@ stages:
         folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
         fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
         scanTimeout: 5
-        projectcustomfields: 'Key1:Value1'
         customfields: 'Key1:Value1'
         denyProject: false
         comment: 'Generating YAML File'
