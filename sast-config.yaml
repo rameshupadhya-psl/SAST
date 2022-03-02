@@ -16,12 +16,12 @@ stages:
     - task: Checkmarx-Prerelease.cxsast.cx-scan-task.Application security testing@2022
       displayName: 'Application security testing'
       inputs:
-        projectName: 'Sprint 11'
+        projectName: 'YML SAST'
         syncMode: true
         enableProxy: false
         proxyUrl: ''
         enableSastScan: true
-        CheckmarxService: 9.4SAST
+        CheckmarxService: 9.4
         sastProxyUrl: ''
         preset: Android
         customPreset: 'All'
