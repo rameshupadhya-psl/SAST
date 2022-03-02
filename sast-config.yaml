@@ -2,7 +2,7 @@ resources:
   repositories:
     - repository: VulnerableCode
       type: git
-      name: Cx-Client-Common1
+      name: JavaVulnerableLabE
       ref: master
 
 stages:
@@ -39,7 +39,6 @@ stages:
         customfields: 'Key1:Value1'
         denyProject: false
         comment: 'Generating YAML File'
-      
         generatePDFReport: true
         vulnerabilityThreshold: true
         failBuildForNewVulnerabilitiesEnabled: true
