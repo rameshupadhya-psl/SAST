@@ -39,7 +39,7 @@ stages:
         customfields: 'Key1:Value1'
         denyProject: false
         comment: 'Generating YAML File'
-        postScanAction: Trial
+      
         generatePDFReport: true
         vulnerabilityThreshold: true
         failBuildForNewVulnerabilitiesEnabled: true
