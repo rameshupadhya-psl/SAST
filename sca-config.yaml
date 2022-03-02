@@ -8,37 +8,35 @@ resources:
 stages:
 - stage: Deploy
   pool: 
-        name: Default
+    name: Default
   jobs:
-  - job: Job 
+  - job: Job
     steps:
+    - checkout: VulnerableCode  
     - task: Checkmarx-Prerelease.cxsast.cx-scan-task.Application security testing@2022
-       displayName: 'Application security testing'
-       inputs:
-            projectName: 'Sprint 11'
-            syncMode: true
-            enableProxy: false
-            proxyUrl: ''
-            enableSastScan: false
-            enableDependencyScan: true
-            dependencyServerURL: 'SCA-Yashh'
-            scaProxyUrl: ''
-            dependencyFileExtension: ''
-            dependencyFolderExclusion: ''
-            scaTeam: /CxServer
-            scaCaChainFilePath: c://Users
-            scaConfigFilePaths: ''
-            scaEnvVariables: ''
-            isEnableScaResolver: true
-            pathToScaResolver: 'c://Users'
-            scaResolverAddParameters: '-s c://Users -n projectName -r results.json'
-            includeSource: true
-            scaExploitablePath: true
-            CheckmarxServiceForSca: 9.4SAST
-            scaProjectFullPath: c://Users
-            scaProjectId: 1
-            scaEnablePolicyViolations: true
-            scaVulnerabilityThreshold: true
-            scaHigh: 10
-            scaMedium: 10
-            scaLow: 10
+      displayName: 'Application security testing'
+      inputs:
+        projectName: 'Sprint 11'
+        syncMode: true
+        enableProxy: false
+        proxyUrl: ''
+        enableSastScan: false
+        enableDependencyScan: true
+        scaProxyUrl: ''
+        dependencyFileExtension: ''
+        dependencyFolderExclusion: ''
+        scaTeam: /CxServer
+        scaCaChainFilePath: c://Users
+        scaConfigFilePaths: ''
+        scaEnvVariables: ''
+        isEnableScaResolver: true   
+        includeSource: true
+        scaExploitablePath: true
+        CheckmarxServiceForSca: 9.4SAST
+        scaProjectFullPath: c://Users
+        scaProjectId: 1
+        scaEnablePolicyViolations: true
+        scaVulnerabilityThreshold: true
+        scaHigh: 10
+        scaMedium: 10
+        scaLow: 10
