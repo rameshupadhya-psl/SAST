@@ -33,23 +33,6 @@ stages:
         includeSource: true
         scaExploitablePath: true        
         CheckmarxServiceForSca : 3591f608-dc87-4971-a690-a40c46cea74b
-- task: Application security testing@2022
-  inputs:
-    projectName: 'Sprint 21'
-    enableProxy: false
-    enableSastScan: false
-    enableDependencyScan: true
-    dependencyServerURL: 'SCA'
-    dependencyFileExtension: 
-    dependencyFolderExclusion: 
-    scaTeam: '/CxServer'
-    scaCaChainFilePath: 'c://Users'
-    isEnableScaResolver: true
-    scaEnablePolicyViolations: true
-    scaVulnerabilityThreshold: true
-    scaHigh: '10'
-    scaMedium: '10'
-    scaLow: '10'
         scaProjectFullPath: c://Users
         scaProjectId: 1
         scaEnablePolicyViolations: true
