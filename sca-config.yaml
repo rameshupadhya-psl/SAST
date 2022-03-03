@@ -29,7 +29,7 @@ stages:
         scaCaChainFilePath: c://Users
         scaConfigFilePaths: ''
         scaEnvVariables: ''
-        isEnableScaResolver: true   
+        isEnableScaResolver: true
         includeSource: true
         scaExploitablePath: true
         CheckmarxServiceForSca: SCA
