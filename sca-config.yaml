@@ -31,8 +31,8 @@ stages:
         scaEnvVariables: ''
         isEnableScaResolver: true
         includeSource: true
-        scaExploitablePath: true
-        CheckmarxServiceForSca: SCA
+        scaExploitablePath: true        
+        dependencyServerURL: 3591f608-dc87-4971-a690-a40c46cea74b
         scaProjectFullPath: c://Users
         scaProjectId: 1
         scaEnablePolicyViolations: true
