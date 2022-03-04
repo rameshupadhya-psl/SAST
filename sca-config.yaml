@@ -26,15 +26,10 @@ stages:
         dependencyFileExtension: ''
         dependencyFolderExclusion: ''
         scaTeam: /CxServer
-        scaCaChainFilePath: c://Users
         scaConfigFilePaths: ''
         scaEnvVariables: ''
-        isEnableScaResolver: true
-        includeSource: true
-        scaExploitablePath: true        
-        CheckmarxServiceForSca : 3591f608-dc87-4971-a690-a40c46cea74b
-        scaProjectFullPath: c://Users
-        scaProjectId: 1
+        includeSource: true         
+        dependencyServerURL: 'SCA'       
         scaEnablePolicyViolations: true
         scaVulnerabilityThreshold: true
         scaHigh: 10
